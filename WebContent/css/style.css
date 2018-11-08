@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+
+.report_manage_con_chart{ height:auto; padding-bottom:10px; overflow:hidden; margin:0 auto; width:100%; padding-top:5px;}
+.report_manage_con_chart_one{ width:70%; float:left; border:1px solid #ccc; height:300px; margin-bottom:10px;}
+.report_manage_con_chart_two{ margin-left:.9%; width:49.3%; float:left; border:1px solid #ccc; height:225px;  margin-bottom:10px;}
+.report_manage_con_chart_two_time{ height:auto; clear:both; width:100%; overflow:hidden;}
+.report_manage_con_chart_two_time #uboxstyle{ font-size:14px; float:left;}
+.report_manage_con_chart_two_c{ height:auto; overflow:hidden; padding:5px 10px;}
+.ow_main_opt_print3 a{ color:black; height:30px; line-height:30px; font-size:14px; margin-right:2px; text-decoration:none; border:1px solid #1c2f4b; padding:2px 12px 2px; float:left; cursor:pointer; }

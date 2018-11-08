@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>My First chart using FusionCharts - JSON data URL</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="FusionCharts.js"></script>
+		<script type="text/javascript" src="FusionCharts.HC.js"></script>
+	</head>
+	<body>
+		<div id="chartContainer">
+			FusionCharts will load here!
+		</div>
+		<script type="text/javascript">
+		FusionCharts.setCurrentRenderer('javascript');
+            var myChart = new FusionCharts("ScrollCombi2D.swf", "myChartId", "400", "300", "0", "1");
+            myChart.setJSONData({
+                "chart" : {
+                    "caption" : "Hits per hour",
+                    "linethickness" : "2",
+                    "showvalues" : "0",
+                    "areaovercolumns" : "0",
+                    "formatnumberscale" : "0",
+                    "useroundedges" : "1",
+                    "palette" : "2",
+                    "legendborderalpha" : "0"
+                },
+                "categories" : [{
+                    "category" : [{
+                        "label" : "00:00"
+                    }, {
+                        "label" : "01:00"
+                    }, {
+                        "label" : "02:00"
+                    }, {
+                        "label" : "03:00"
+                    }, {
+                        "label" : "04:00"
+                    }, {
+                        "label" : "05:00"
+                    }, {
+                        "label" : "06:00"
+                    }, {
+                        "label" : "07:00"
+                    }, {
+                        "label" : "08:00"
+                    }, {
+                        "label" : "09:00"
+                    }, {
+                        "label" : "10:00"
+                    }, {
+                        "label" : "11:00"
+                    }]
+                }],
+                "dataset" : [{"seriesname" : "Actuals - Monday",
+                    "data" : [{
+                        "value" : "336"
+                    }, {
+                        "value" : "371"
+                    }, {
+                        "value" : "485"
+                    }, {
+                        "value" : "592"
+                    }, {
+                        "value" : "601"
+                    }, {
+                        "value" : "716"
+                    }, {
+                        "value" : "864"
+                    }, {
+                        "value" : "880"
+                    }, {
+                        "value" : "992"
+                    }, {
+                        "value" : "1062"
+                    }, {
+                        "value" : "1119"
+                    }, {
+                        "value" : "1089"
+                    }
+                     ]
+                }, {
+                    "seriesname" : "Average",
+                    "renderas" : "Line",
+                    "color" : "0372AB",
+                    "linethickness" : "2",
+                    "data" : [{
+                        "value" : "511"
+                    }, {
+                        "value" : "520"
+                    }, {
+                        "value" : "628"
+                    }, {
+                        "value" : "640"
+                    }, {
+                        "value" : "746"
+                    }, {
+                        "value" : "757"
+                    }, {
+                        "value" : "890"
+                    }, {
+                        "value" : "1050"
+                    }, {
+                        "value" : "1099"
+                    }, {
+                        "value" : "1191"
+                    },{
+                        "value" : "746"
+                    }, {
+                        "value" : "757"
+                    }]
+                }],
+                "trendlines" : [{
+                    "line" : [{
+                        "startvalue" : "4500",
+                        "color" : "359A35",
+                        "displayvalue" : "Good",
+                        "valueonright" : "1"
+                    }]
+                }]
+            });
+            myChart.render("chartContainer");
+
+		</script>
+	</body>
+</html>
